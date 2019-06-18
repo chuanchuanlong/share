@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //友盟相关
+    implementation 'com.umeng.umsdk:common:2.0.0'
+    implementation 'com.umeng.umsdk:utdid:1.1.5.3'
+    //支付宝
+    implementation files('libs/libapshare20161108.jar')
+    implementation files('libs/umeng-share-alipay-6.9.4.jar')
+    //分享核心包
+    implementation files('libs/umeng-sharetool-6.9.4.jar')
+    implementation files('libs/umeng-share-core-6.9.4.jar')
+    //QQ
+    implementation files('libs/umeng-share-QQ-simplify-6.9.4.jar')
+    //新浪
+    implementation files('libs/umeng-share-sina-simplify-6.9.4.jar')
+    //短信
+    implementation files('libs/umeng-share-sms-6.9.4.jar')
+    //微信
+    implementation files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    //钉钉
+    implementation files('libs/libddshare.jar')
+    implementation files('libs/umeng-share-Ding-6.9.4.jar')
+    //动态权限管理
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.1@aar'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.11'
+
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+}

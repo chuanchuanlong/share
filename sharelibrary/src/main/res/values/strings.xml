@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShareLibrary</string>
+    <string name="share_title">分享</string>
+    <string name="cancel">取消</string>
+</resources>

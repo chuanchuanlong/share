@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_666666">#666666</color>
+    <color name="text_color_007aff">#007aff</color>
+    <color name="text_color_999999">#999999</color>
+    <color name="text_color_b3b3b3">#b3b3b3</color>
+    <color name="divider_color">#e0e0e0</color>
+    // selectView
+    <color name="popupwindow_select_list_title_color">#f7f7f7</color>
+    <color name="popupwindow_select_item_color">#ffffff</color>
+    <color name="popupwindow_select_item_divider_color">#eeeeee</color>
+    <color name="popupwindow_select_item_gap_color">#ededed</color>
+    <color name="popupwindow_select_item_check_color">#F9EDEF</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="share_popupwindow_cancel_item_height">30dp</dimen>
+    <dimen name="share_popupwindow_title_height">30dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+</resources>
