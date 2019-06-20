@@ -41,7 +41,7 @@ public class ShareConfig {
         return dingKey;
     }
 
-    class Builder {
+    public static class Builder {
         String wechatKey;
         String qqKey;
         String sinaKey;
