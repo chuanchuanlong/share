@@ -13,6 +13,7 @@ import com.umeng.socialize.UMShareAPI;
 public class UMTools {
     /**
      * 初始化友盟统计
+     *
      * @param context
      * @param umKey
      * @param debug
@@ -24,6 +25,7 @@ public class UMTools {
 
     /**
      * 初始化友盟分享
+     *
      * @param context
      * @param shareConfig
      */
@@ -43,7 +45,7 @@ public class UMTools {
             PlatformConfig.setQQZone(shareConfig.getQqId(), shareConfig.getQqKey());
         }
         //支付宝
-        if (!TextUtils.isEmpty(shareConfig.getWechatKey())) {
+        if (!TextUtils.isEmpty(shareConfig.getAlipayKey())) {
             PlatformConfig.setAlipay(shareConfig.getAlipayKey());
         }
         //钉钉
