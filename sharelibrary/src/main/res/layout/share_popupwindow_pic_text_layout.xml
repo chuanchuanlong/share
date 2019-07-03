@@ -1,34 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:gravity="bottom"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/share_popupwindow_title_height"
-        android:gravity="center"
-        android:text="@string/share_title"
-        android:textColor="@color/text_color_b3b3b3"
-        android:textSize="@dimen/text_size_14" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/shareItemList"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"></android.support.v7.widget.RecyclerView>
-
-
-    <TextView
-        android:id="@+id/tv_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/share_popupwindow_cancel_item_height"
-        android:background="#ffffff"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:background="@drawable/shape_dialog_bg"
         android:gravity="center"
-        android:text="取消"
-        android:textColor="@color/text_color_333333"
-        android:textSize="@dimen/text_size_16" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_popupwindow_title_height"
+            android:gravity="center"
+            android:text="@string/share_title"
+            android:textColor="@color/text_color_b3b3b3"
+            android:textSize="@dimen/text_size_14" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shareItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/share_popupwindow_cancel_item_height"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
 </LinearLayout>

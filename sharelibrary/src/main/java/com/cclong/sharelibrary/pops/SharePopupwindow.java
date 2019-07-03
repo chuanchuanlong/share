@@ -39,7 +39,7 @@ public class SharePopupwindow extends BaseSharePopupwindow implements OnItemClic
 
     public void showTitle(boolean isShow) {
         if (mTitle != null) {
-            mTitle.setVisibility(isShow ? View.VISIBLE : View.INVISIBLE);
+            mTitle.setVisibility(isShow ? View.VISIBLE : View.GONE);
         }
     }
 

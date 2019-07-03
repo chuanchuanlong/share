@@ -2,10 +2,8 @@ package com.cclong.sharelibrary.factory;
 
 import android.app.Activity;
 
-import com.cclong.sharelibrary.enmus.SharePlatform;
 import com.cclong.sharelibrary.pops.SharePopupwindow;
 
-import java.util.List;
 
 public class RecycleShareFactory extends ShareFactory {
     public RecycleShareFactory(Builder builder) {

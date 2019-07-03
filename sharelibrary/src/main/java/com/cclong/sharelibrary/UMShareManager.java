@@ -100,7 +100,7 @@ public class UMShareManager implements ICCLongPop {
      */
     public void showSharePlatForm() {
         if (!mBasePopupwindow.isShowing()) {
-            mBasePopupwindow.showAtLocation(mActivity.getWindow().getDecorView(), Gravity.BOTTOM, 0, 0);
+            mBasePopupwindow.showPopupWindow();
         }
     }
 

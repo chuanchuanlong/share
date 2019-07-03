@@ -2,9 +2,9 @@ package com.cclong.sharelibrary.pops;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
-import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
@@ -49,8 +49,7 @@ public class BaseSharePopupwindow extends PopupWindow {
         setFocusable(true); //获取焦点
         setTouchable(true);
         setOutsideTouchable(false); //设置popupwindow外部可点击
-        ColorDrawable dw = new ColorDrawable(0x7f000000); //实例化一个ColorDrawable颜色为半透明
-        setBackgroundDrawable(dw); //点back键和其他地方使其消失,设置了这个才能触发OnDismisslistener ，设置其他控件变化等操作
+        setBackgroundDrawable(new BitmapDrawable()); //点back键和其他地方使其消失,设置了这个才能触发OnDismisslistener ，设置其他控件变化等操作
 //        int identifier = activity.getApplication().getResources().getIdentifier("popwindow_anim_style", "style", activity.getPackageName());
         setAnimationStyle(R.style.popwindow_anim_style);
         setOnDismissListener(new OnDismissListener() {
