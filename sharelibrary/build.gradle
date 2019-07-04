@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin:'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven'
 android {
     compileSdkVersion 28
 
@@ -17,7 +17,7 @@ android {
     buildTypes {
         debug {
             manifestPlaceholders = [
-                    QQ_APPID:"",
+                    QQ_APPID: "",
             ]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -28,7 +28,6 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -50,9 +49,10 @@ dependencies {
     implementation files('libs/libddshare.jar')
     implementation files('libs/umeng-share-Ding-6.9.4.jar')
     //动态权限管理
-    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.1@aar'
-    api 'io.reactivex.rxjava2:rxjava:2.1.11'
-    api 'com.android.support:recyclerview-v7:28.0.0'
+    api roots.rxpermissions
+    api roots.rxjava
+    api roots.appcompat
+    api roots.recyclerview
     implementation files('libs/umeng-analytics-8.0.2.jar')
     implementation files('libs/umeng-common-2.0.2.jar')
 }
