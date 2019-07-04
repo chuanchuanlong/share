@@ -1,49 +1,47 @@
 ext {
-//    //sdk版本管理
-//    CompileSdkVersion = 26  // 用于编译的SDK版本
-//    BuildToolsVersion = "28.0.3" // 用于Gradle编译项目的工具版本
-//
-//    ApplicationId = "com.orange.insurance" //包名
-//    MinSdkVersion = 19    // 最低支持Android版本
-//    TargetSdkVersion = 26   // 目标版本
-//    VersionCode = 1         //版本号
-//    VersionName = "1.0"
-//    MinifyEnabled = false //是否混淆
-//
-//    // App dependencies
-//    appcompatVersion = "27.1.0"
-//    junitVersion = "4.12"
-//    runnerVersion = "1.0.2"
-//    espressoVersion = "3.0.2"
-//
-//    supportV4Version = "27.1.0"
-//    designVersion = "27.1.0"
-//    cardview = "27.1.0"
-//    appcompat = "27.1.0"
-//    recyclerview = "27.1.0"
-//    supportV13Version = "27.1.0"
+    //sdk版本管理
+    CompileSdkVersion = 26  // 用于编译的SDK版本
+    BuildToolsVersion = "28.0.3" // 用于Gradle编译项目的工具版本
+
+    ApplicationId = "com.orange.insurance" //包名
+    MinSdkVersion = 19    // 最低支持Android版本
+    TargetSdkVersion = 26   // 目标版本
+    VersionCode = 1         //版本号
+    VersionName = "1.0"
+    MinifyEnabled = false //是否混淆
+    // App dependencies
+    appcompatVersion = "27.1.0"
+    junitVersion = "4.12"
+    runnerVersion = "1.0.2"
+    espressoVersion = "3.0.2"
+    supportV4Version = "27.1.0"
+    designVersion = "27.1.0"
+    cardview = "27.1.0"
+    appcompat = "27.1.0"
+    recyclerview = "27.1.0"
+    supportV13Version = "27.1.0"
 
     //公共的(系统的)
     roots = [
             //项目基本的(每个项目需要的)
-//            "appcompatV7"               :   "com.android.support:appcompat-v7:${appcompatVersion}",
-//            "junit"                     :   "junit:junit:${junitVersion}",
-//            "runner"                    :   "com.android.support.test:runner:${runnerVersion}",
-//            "espresso"                  :   "com.android.support.test.espresso:espresso-core:${espressoVersion}",
-//            "design"       : "com.android.support:design:${designVersion}",
-//            "cardview"     : "com.android.support:cardview-v7:${cardview}",
-//            "recyclerview" : "com.android.support:recyclerview-v7:${recyclerview}",
-//            "appcompat"    : "com.android.support:appcompat-v7:${appcompat}",
-//            "supportV13"   : "com.android.support:support-v13:${supportV13Version}",
-//            "supportV4"    : "com.android.support:support-v4:${supportV4Version}",
-//            "marqueeView"  : 'com.xj.marqueeView:marqueeView:0.1.20',
-//            "share"        : 'com.github.chuanchuanlong:share:v1.0.11',
-//            "flexbox"      : 'com.google.android:flexbox:1.0.0',
-//            "pickerView"   : 'com.contrarywind:Android-PickerView:4.1.8',
-//            //基础控件库 用於自定義邏輯
-//            "wheelview"    : 'com.contrarywind:wheelview:4.0.9',
-//            "rxpermissions": 'com.github.tbruyelle:rxpermissions:0.10.2',
-//            "rxjava"       : 'io.reactivex.rxjava2:rxjava:2.1.11',
+            "appcompatV7"  : "com.android.support:appcompat-v7:${appcompatVersion}",
+            "junit"        : "junit:junit:${junitVersion}",
+            "runner"       : "com.android.support.test:runner:${runnerVersion}",
+            "espresso"     : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            "design"       : "com.android.support:design:${designVersion}",
+            "cardview"     : "com.android.support:cardview-v7:${cardview}",
+            "recyclerview" : "com.android.support:recyclerview-v7:${recyclerview}",
+            "appcompat"    : "com.android.support:appcompat-v7:${appcompat}",
+            "supportV13"   : "com.android.support:support-v13:${supportV13Version}",
+            "supportV4"    : "com.android.support:support-v4:${supportV4Version}",
+            "marqueeView"  : 'com.xj.marqueeView:marqueeView:0.1.20',
+            "share"        : 'com.github.chuanchuanlong:share:v1.0.11',
+            "flexbox"      : 'com.google.android:flexbox:1.0.0',
+            "pickerView"   : 'com.contrarywind:Android-PickerView:4.1.8',
+            //基础控件库 用於自定義邏輯
+            "wheelview"    : 'com.contrarywind:wheelview:4.0.9',
+            "rxpermissions": 'com.github.tbruyelle:rxpermissions:0.10.2',
+            "rxjava"       : 'io.reactivex.rxjava2:rxjava:2.1.11',
     ]
 
 }
