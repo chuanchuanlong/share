@@ -2,6 +2,7 @@ package com.cclong.sharelibrary.beans;
 
 public class ShareConfig {
     String wechatKey;
+    String wechatSecret;
     String qqKey;
     String sinaKey;
     String qqId;
@@ -11,6 +12,7 @@ public class ShareConfig {
     public ShareConfig(Builder builder) {
         this.alipayKey = builder.alipayKey;
         this.wechatKey = builder.wechatKey;
+        this.wechatSecret = builder.wechatSecret;
         this.qqKey = builder.qqKey;
         this.sinaKey = builder.sinaKey;
         this.qqId = builder.qqId;
@@ -43,6 +45,7 @@ public class ShareConfig {
 
     public static class Builder {
         String wechatKey;
+        String wechatSecret;
         String qqKey;
         String sinaKey;
         String qqId;
@@ -55,6 +58,11 @@ public class ShareConfig {
 
         public Builder setWechatKey(String wechatKey) {
             this.wechatKey = wechatKey;
+            return this;
+        }
+
+        public Builder setWechatSecret(String wechatSecret) {
+            this.wechatSecret = wechatSecret;
             return this;
         }
 
